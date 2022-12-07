@@ -1,8 +1,8 @@
-from tensorflow.keras.applications import EfficientNetB0
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.efficientnet import preprocess_input
-from tensorflow.keras.applications.efficientnet import decode_predictions
-import numpy as np
+@st.cache(allow_output_mutation=True)
+def load_model():
+    model = EfficientNetB0(weights='imagenet')
+    return mode
+
 
 
 import io
