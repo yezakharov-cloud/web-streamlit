@@ -1,9 +1,10 @@
+
+from tensorflow.keras.applications import InceptionResNetV2
+
+
 import io
 import streamlit as st
 from PIL import Image
-
-
-
 
 def load_image():
     uploaded_file = st.file_uploader(label='Оберіть зображення')
