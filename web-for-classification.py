@@ -29,20 +29,11 @@ img = load_image()
 
 result = st.button('Розпізнати зображення')
 
-plt.imshow(img)
-plt.show()
-
-"""Выполняем предварительную обработку изображения"""
-
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input(x)
 
-"""Запускаем распознавание"""
-
 preds = model.predict(x)
-
-"""Печатаем ТОП-3 класса с самой большой вероятностью"""
 
 classes = decode_predictions(preds, top=3)[0]
 for cl in classes:
