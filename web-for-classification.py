@@ -25,3 +25,5 @@ st.title('Класифікація зображень')
 img = load_image()
 
 result = st.button('Розпізнати зображення')
+
+print('Please wait while the program is loading...')
