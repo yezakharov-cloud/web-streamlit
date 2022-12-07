@@ -1,24 +1,8 @@
-
-import os
-import time
-import cv2
-import sys
-import csv
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import tensorflow as tf
-import keras_preprocessing
-import streamlit as st
+from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.efficientnet import preprocess_input
+from tensorflow.keras.applications.efficientnet import decode_predictions
 import numpy as np
-import pandas as pd
-from numpy import argmax
-from PIL import Image , ImageEnhance
-from resizeimage import resizeimage
-from utils import label_map_util
-from utils import visualization_utils as vis_util
-from keras.preprocessing import image
-from keras_preprocessing.image import ImageDataGenerator
-from pathlib import Path
 
 
 import io
