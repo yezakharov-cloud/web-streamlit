@@ -2,6 +2,8 @@ import io
 import streamlit as st
 from PIL import Image
 
+pip install --upgrade tf_agents
+
 def load_image():
     uploaded_file = st.file_uploader(label='Оберіть зображення')
     if uploaded_file is not None:
