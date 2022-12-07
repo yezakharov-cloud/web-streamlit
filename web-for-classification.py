@@ -1,13 +1,12 @@
-@st.cache(allow_output_mutation=True)
-def load_model():
-    model = EfficientNetB0(weights='imagenet')
-    return mode
-
-
-
 import io
 import streamlit as st
+
+
+
 from PIL import Image
+
+
+
 
 def load_image():
     uploaded_file = st.file_uploader(label='Оберіть зображення')
