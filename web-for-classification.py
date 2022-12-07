@@ -13,3 +13,4 @@ def load_image():
 
 st.title('Класифікація зображень')
 img = load_image()
+result = st.button('Розпізнати зображення')
