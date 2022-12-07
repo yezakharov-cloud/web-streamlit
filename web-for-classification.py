@@ -21,7 +21,7 @@ def preprocess_image(img):
 
 
 def load_image():
-    uploaded_file = st.file_uploader(label='Выберите изображение для распознавания')
+    uploaded_file = st.file_uploader(label='Виберіть зображення для розпізнавання')
     if uploaded_file is not None:
         image_data = uploaded_file.getvalue()
         st.image(image_data)
@@ -39,11 +39,11 @@ def print_predictions(preds):
 model = load_model()
 
 
-st.title('Новая улучшенная классификации изображений в облаке Streamlit')
+st.title('Класифікація зображень')
 img = load_image()
-result = st.button('Распознать изображение')
+result = st.button('Розпізнати зображення')
 if result:
     x = preprocess_image(img)
     preds = model.predict(x)
-    st.write('**Результаты распознавания:**')
+    st.write('Результати розпізнавання:')
     print_predictions(preds)
