@@ -31,7 +31,7 @@ def print_predictions(preds):
     for cl in classes:
         st.write(cl[1], cl[2])
 
-model = load_model()
+
 
 
 st.title('Класифікація зображень')
