@@ -8,7 +8,6 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 from tensorflow.keras.applications.efficientnet import decode_predictions
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline 
 
 def load_image():
     uploaded_file = st.file_uploader(label='Оберіть зображення')
