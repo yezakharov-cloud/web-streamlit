@@ -36,7 +36,3 @@ if result:
     x = preprocess_image(img)
     preds = model.predict(x)
     st.write('**Результаты распознавания:**')
-
-
-classes = decode_predictions(preds, top=3)[0]
-for cl in classes:
