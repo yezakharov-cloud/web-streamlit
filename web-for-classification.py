@@ -40,4 +40,4 @@ def load_image():
 
     classes = decode_predictions(preds, top=3)[0]
     for cl in classes:
-    print(cl[1],cl[2])
+    st.write(cl[1], cl[2])
