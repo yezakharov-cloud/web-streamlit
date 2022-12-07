@@ -1,5 +1,5 @@
 
-from tensorflow.keras.applications import InceptionResNetV2
+import tensorflow as tf
 
 
 import io
