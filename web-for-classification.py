@@ -23,8 +23,6 @@ def load_image():
 st.title('Класифікація зображень')
 img = load_image()
 
-img = image.load_img(target_size=(224, 224))
-
 result = st.button('Розпізнати зображення')
 
 x = image.img_to_array(img)
