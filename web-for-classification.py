@@ -38,5 +38,10 @@ model = load_model()
 
 st.title('Класифікація зображень')
 img = load_image()
-
 result = st.button('Розпізнати зображення')
+
+if result:
+    x = preprocess_image(img)
+    preds = model.predict(x)
+    st.write('**Результаты распознавания:**')
+    print_predictions(preds)
