@@ -25,13 +25,3 @@ st.title('Класифікація зображень')
 img = load_image()
 
 result = st.button('Розпізнати зображення')
-
-x = img_to_array(img)
-x = np.expand_dims(x, axis=0)
-x = preprocess_input(x)
-
-preds = model.predict(x)
-
-classes = decode_predictions(preds, top=3)[0]
-for cl in classes:
-    print(cl[1], cl[2])
