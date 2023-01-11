@@ -38,7 +38,7 @@ class Schelling:
                         self.city[row,col] = 0
 
     def get_mean_similarity_ratio(self):
-        count = 0
+        count
         similarity_ratio = 0
         for (row, col), value in np.ndenumerate(self.city):
             race = self.city[row, col]
