@@ -59,7 +59,7 @@ class Schelling:
 st.title("Schelling's Model of Segregation")
 
 population_size = st.sidebar.slider("Population Size", 500, 10000, 10000)
-empty_ratio = st.sidebar.slider("Empty Houses Ratio", 0., 1., .1)
+empty_ratio = st.sidebar.slider("Empty Houses Ratio", 0., 1., .01)
 similarity_threshold = st.sidebar.slider("Similarity Threshold", 0., 10., 6.)
 n_iterations = st.sidebar.number_input("Number of Iterations", 10)
 
